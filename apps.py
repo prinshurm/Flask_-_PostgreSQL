@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:new_password@localhost:5432/cars_api"
+app.config['SQLALCHEMY_DATABASE_URI'] = app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:your password@localhost:5432/cars_api"
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
